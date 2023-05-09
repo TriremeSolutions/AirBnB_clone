@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Defines file storage class
+"""
+
 import json
 import os.path
 import datetime
