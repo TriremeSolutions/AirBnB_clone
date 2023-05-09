@@ -24,7 +24,7 @@ class FileStorage:
             new_dict[key] = value.to_dict()
         with open(self.__file_path, "w") as f:
             json.dump(new_dict, f)
-# TODO FIX THE RELOAD FUNCTION KEEP THROWING NameError: name 'models' is not defined
+
     def reload(self):
         """
         deserializes the JSON file to __objects only if the JSON
