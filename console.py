@@ -18,6 +18,7 @@ def first_pass(arg):
         print("** class name missing **")
         return
 
+
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
     def_class = ['BaseModel']
