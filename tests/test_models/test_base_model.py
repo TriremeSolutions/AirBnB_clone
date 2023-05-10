@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """ This module handles miscellaneous unit testing """
 
+import os
+import models
 import unittest
 from models.base_model import BaseModel
 import datetime
 
 
-class TestingBaseModel(unittest.TestCase):
+class TestBaseModel(unittest.TestCase):
     """
     Class defines a series of test
     for the Airbnb console
@@ -14,7 +16,7 @@ class TestingBaseModel(unittest.TestCase):
 
     my_model = BaseModel()
 
-    def BaseModelTest_1(self):
+    def test_BaseModelTest_1(self):
         """
         This test ascertains the attributes
         value of a given instance in the BaseModel
