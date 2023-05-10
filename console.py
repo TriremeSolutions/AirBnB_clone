@@ -26,7 +26,7 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """Do nothing on empty line"""
         pass
-    
+
     def do_create(self, arg):
         """
         Creates a new instance of BaseModel,
@@ -42,6 +42,7 @@ class HBNBCommand(cmd.Cmd):
             my_model = n_dict[arg]()
             print(my_model.id)
             my_model.save()
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
