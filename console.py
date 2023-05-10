@@ -43,6 +43,31 @@ class HBNBCommand(cmd.Cmd):
             print(my_model.id)
             my_model.save()
 
+    def do_show(self, arg):
+        """
+        Prints the string representation of an instance
+        based on the class name and id
+        """
+
+        if not arg:
+            print("** class name missing **")
+            return
+
+        spl_arg = arg.split(' ')
+
+        if spl_arg[0] not in HBNBCommand.def_class:
+            print("** class doesn't exist **")
+        elif len(spl_arg) == 1:
+            print("** instance id missing **")
+        else:
+            obj_tot = storage.all()
+            for key, value in obj_tot.items():
+                name_obj = value.__class__.__name__
+                id_obj = value.id
+                if name_obj == spl_arg[0] and id_obj == spl_arg[1].strip('"'):
+                    print(value)
+                    return
+            print("** no instance found **")
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
