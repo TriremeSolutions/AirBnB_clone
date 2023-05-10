@@ -6,7 +6,7 @@ from BaseModel
 from models.base_model import BaseModel
 
 
-class Place(BaseModel):
+class Review(BaseModel):
     """Defines a user review representation.
 
     Attributes:
