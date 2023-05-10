@@ -22,6 +22,10 @@ To run this program, you need to have the following:
 - You can install the `cmd` module using `pip`, which is the package installer for Python. The `json`, `os`, and `datetime` modules are built-in and come pre-installed with Python 3.
 
 ### Installing
+You can download the source code of this project by running the following command:
+```
+git clone https://github.com/MelakuDemeke/AirBnB_clone.git
+```
 ## Commands
 
 ## Usage
