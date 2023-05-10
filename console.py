@@ -56,7 +56,11 @@ class HBNBCommand(cmd.Cmd):
         elif arg not in HBNBCommand.def_class:
             print("** class doesn't exist **")
         else:
-            n_dict = {'BaseModel': BaseModel, 'User': User}
+            n_dict = {
+                    'BaseModel': BaseModel,
+                    'User': User, 'State': State,
+                    'City': City, 'Review': Review,
+                    'Place': Place, 'Amenity': Amenity}
             my_model = n_dict[arg]()
             print(my_model.id)
             my_model.save()
