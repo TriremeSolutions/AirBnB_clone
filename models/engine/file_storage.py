@@ -7,6 +7,11 @@ import json
 import os.path
 from models.base_model import BaseModel
 from models.user import User
+from models.state import State
+from models.city import City
+from models.place import Place
+from models.amenity import Amenity
+from models.review import Review
 
 
 class FileStorage:
@@ -32,7 +37,11 @@ class FileStorage:
         deserializes the JSON file to __objects only if the JSON
         file exists; otherwise, does nothing
         """
-        current_classes = {'BaseModel': BaseModel, 'User': User}
+        current_classes = {
+                'BaseModel': BaseModel,
+                'User': User, 'State': State,
+                'City': City, 'Place': Place,
+                'Amenity': Amenity, 'Review': Review}
         if not os.path.exists(FileStorage.__file_path):
             return
         with open(FileStorage.__file_path, 'r') as f:
