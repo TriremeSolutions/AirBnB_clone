@@ -22,7 +22,7 @@ def first_pass(arg):
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
-    def_class = ['BaseModel','User']
+    def_class = ['BaseModel', 'User']
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
