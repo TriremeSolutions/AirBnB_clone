@@ -10,4 +10,7 @@ The command interpreter provides a way for the user to interact with the objects
 
 ## Files
 
-## Authors
+## contributors
+<a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MelakuDemeke/AirBnB_clone" />
+</a>
