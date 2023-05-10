@@ -10,6 +10,14 @@ import json
 import shlex
 
 
+def first_pass(arg):
+    """
+    returns upon invalid arg value
+    """
+    if not arg:
+        print("** class name missing **")
+        return
+
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
     def_class = ['BaseModel']
@@ -49,10 +57,7 @@ class HBNBCommand(cmd.Cmd):
         based on the class name and id
         """
 
-        if not arg:
-            print("** class name missing **")
-            return
-
+        first_pass(arg)
         spl_arg = arg.split(' ')
 
         if spl_arg[0] not in HBNBCommand.def_class:
@@ -74,10 +79,7 @@ class HBNBCommand(cmd.Cmd):
         Deletes an instance based on the class name and id.
         Change is saved into the JSON file
         """
-        if not arg:
-            print("** class name missing **")
-            return
-
+        first_pass(arg)
         spl_arg = arg.split(' ')
 
         if spl_arg[0] not in HBNBCommand.def_class:
