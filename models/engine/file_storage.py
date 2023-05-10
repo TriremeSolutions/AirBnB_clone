@@ -6,7 +6,7 @@ Defines file storage class
 import json
 import os.path
 from models.base_model import BaseModel
-
+from models.user import User
 
 class FileStorage:
     __file_path = "file.json"
@@ -31,7 +31,7 @@ class FileStorage:
         deserializes the JSON file to __objects only if the JSON
         file exists; otherwise, does nothing
         """
-        current_classes = {'BaseModel': BaseModel}
+        current_classes = {'BaseModel': BaseModel, 'User': User}
         if not os.path.exists(FileStorage.__file_path):
             return
         with open(FileStorage.__file_path, 'r') as f:
