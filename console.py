@@ -6,6 +6,7 @@ Console for AirBnB clone
 import cmd
 from models import storage
 from models.base_model import BaseModel
+from models.user import User
 import json
 import shlex
 
@@ -21,7 +22,7 @@ def first_pass(arg):
 
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
-    def_class = ['BaseModel']
+    def_class = ['BaseModel','User']
 
     def do_quit(self, arg):
         """Quit command to exit the program"""
