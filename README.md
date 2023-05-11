@@ -17,7 +17,7 @@ The command interpreter provides a way for the user to interact with the objects
 - `show` - Prints the string representation of an instance based on the class name and id.
 - `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file).
 - `all` - Prints all string representation of all instances based or not on the class name.
-
+- `update` - Updates an instance based on the class name and id by adding or updating attribute (save the change into the JSON file).
 
 
 ## Getting Started
