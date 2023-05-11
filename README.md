@@ -54,6 +54,11 @@ Examples:
 (hbnb) show BaseModel 1234-1234-1234
 ```
 
+- Destroying an instance of the BaseModel class with the given id:
+```
+(hbnb) destroy BaseModel 1234-1234-1234
+```
+
 
 
 ## contributors
