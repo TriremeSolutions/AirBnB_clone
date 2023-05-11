@@ -64,7 +64,10 @@ Examples:
 (hbnb) all BaseModel
 ```
 
-
+- Updating an attribute of an instance of the BaseModel class with the given id:
+```
+(hbnb) update BaseModel 1234-1234-1234 email "aibnb@mail.com"
+```
 
 ## contributors
 <a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
