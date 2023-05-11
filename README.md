@@ -6,6 +6,19 @@
 ![GitHub forks](https://img.shields.io/github/forks/MelakuDemeke/AirBnB_clone?logo=github&style=falt)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MelakuDemeke/AirBnB_clone?logo=github)
 
+## Table of Contents
+- [AirBnB\_clone](#airbnb_clone)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [The Command Interpreter](#the-command-interpreter)
+    - [Commands](#commands)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+  - [Usage](#usage)
+    - [usage based on the commands](#usage-based-on-the-commands)
+  - [contributors](#contributors)
+
 ## Description
 This is the console part of the Airbnb clone project for ALX Africa. It allows us to manage objects through the command line, retrieve objects from a file, and store objects in that file. This is a project to learn and understand how a command interpreter works and how to use it to build a functional Airbnb clone.
 
