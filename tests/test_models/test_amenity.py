@@ -14,5 +14,9 @@ class TestAmenity(unittest.TestCase):
         amenity.name = "Wifi"
         self.assertEqual(amenity.name, "Wifi")
         
+    def test_inheritance(self):
+        amenity = Amenity()
+        self.assertTrue(issubclass(type(amenity), BaseModel))
+        
 if __name__ == '__main__':
     unittest.main()
