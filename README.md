@@ -74,6 +74,8 @@ Examples:
 | Command | Syntax | Description |
 | --- | --- | --- |
 | create | `create <class name>` | Creates a new instance of the specified class and saves it to the JSON file. Prints the new instance's id. |
+| show | `show <class name> <id>` | Prints the string representation of the instance with the specified id. |
+| destroy | `destroy <class name> <id>` | Deletes the instance with the specified id from the JSON file. |
 
 
 ## contributors
