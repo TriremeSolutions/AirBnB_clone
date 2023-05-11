@@ -76,6 +76,16 @@ Examples:
 | create | `create <class name>` | Creates a new instance of the specified class and saves it to the JSON file. Prints the new instance's id. |
 | show | `show <class name> <id>` | Prints the string representation of the instance with the specified id. |
 | destroy | `destroy <class name> <id>` | Deletes the instance with the specified id from the JSON file. |
+| all | `all [<class name>]` | Prints the string representation of all instances. If a class name is provided, only instances of that class will be printed. |
+| update | `update <class name> <id> <attribute name> "<attribute value>"` | Updates an instance with the specified id by adding or updating the specified attribute with the specified value. Saves the change to the JSON file. |
+
+To use the command interpreter, simply run the `console.py` file in the command line using Python 3:
+
+```
+$ python3 console.py
+```
+
+This will start the command interpreter with the prompt `(hbnb)`. From here, you can enter any of the commands listed above, followed by the required arguments. For example:
 
 
 ## contributors
