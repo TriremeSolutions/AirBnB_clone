@@ -69,6 +69,10 @@ Examples:
 (hbnb) update BaseModel 1234-1234-1234 email "aibnb@mail.com"
 ```
 
+### usage based on the commands
+
+| Command | Syntax | Description |
+
 ## contributors
 <a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=MelakuDemeke/AirBnB_clone" />
