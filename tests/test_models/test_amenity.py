@@ -18,5 +18,10 @@ class TestAmenity(unittest.TestCase):
         amenity = Amenity()
         self.assertTrue(issubclass(type(amenity), BaseModel))
         
+    def test_str_representation(self):
+        amenity = Amenity()
+        amenity.name = "Pool"
+        self.assertEqual(str(amenity), "[Amenity] ({}) {}".format(amenity.id, amenity.__dict__))
+        
 if __name__ == '__main__':
     unittest.main()
