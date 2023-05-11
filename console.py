@@ -32,7 +32,7 @@ class HBNBCommand(cmd.Cmd):
             'City', 'State', 'Place',
             'Review', 'Amenity']
 
-    meth = ['create', 'destroy', 'update', 'show', 'all']
+    meth = ['create', 'destroy', 'update', 'show', 'all', 'count']
 
     def precmd(self, arg):
         """
@@ -145,6 +145,19 @@ class HBNBCommand(cmd.Cmd):
                 if name_obj == spl_arg[0]:
                     inst_list += [value.__str__()]
             print(inst_list)
+
+    def do_count(self, class_name):
+        """
+        This retrieves the number of instances
+        of a class
+        """
+        count = 0
+        obj_tot = storage.all()
+        for key, value in obj_tot.items():
+            cl_name = key.split('.')
+            if cl_name[0] == class_name:
+                count = count + 1
+        print(count)
 
     def do_update(self, arg):
         """
