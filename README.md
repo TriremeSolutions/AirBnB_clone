@@ -34,11 +34,15 @@ You can download the source code of this project by running the following comman
 ```
 git clone https://github.com/MelakuDemeke/AirBnB_clone.git
 ```
-## Commands
-
 ## Usage
 
-## Files
+To start the console, run the following command:
+```
+./console.py
+```
+Once the console has started, you can run any of the above commands followed by the necessary arguments.
+
+
 
 ## contributors
 <a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
