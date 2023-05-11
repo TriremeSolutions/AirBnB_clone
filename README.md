@@ -49,6 +49,12 @@ Examples:
 (hbnb) create BaseModel
 ```
 
+- Showing an instance of the BaseModel class with the given id:
+```
+(hbnb) show BaseModel 1234-1234-1234
+```
+
+
 
 ## contributors
 <a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
