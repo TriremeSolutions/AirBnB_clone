@@ -32,6 +32,20 @@ class HBNBCommand(cmd.Cmd):
             'City', 'State', 'Place',
             'Review', 'Amenity']
 
+    meth = ['create', 'destroy', 'update', 'show', 'all']
+
+    def precmd(self, arg):
+        """
+        This parses the console input
+        """
+        if '.' in arg and '(' in arg and ')' in arg:
+            dC = arg.split('.')
+            dM = dC[1].split('(')
+            param = dM[1].split(')')
+            if dC[0] in HBNBCommand.def_class and dM[0] in HBNBCommand.meth:
+                arg = dM[0] + ' ' + dC[0] + ' ' + param[0]
+        return arg
+
     def do_quit(self, arg):
         """Quit command to exit the program"""
         return True
