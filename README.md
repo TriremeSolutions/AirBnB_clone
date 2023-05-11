@@ -84,6 +84,15 @@ To use the command interpreter, simply run the `console.py` file in the command 
 ```
 $ python3 console.py
 ```
+```
+(hbnb) create BaseModel
+43c18b6d-9816-4f50-9873-1d7501a68f57
+(hbnb) show BaseModel 43c18b6d-9816-4f50-9873-1d7501a68f57
+[BaseModel] (43c18b6d-9816-4f50-9873-1d7501a68f57) {'id': '43c18b6d-9816-4f50-9873-1d7501a68f57', 'created_at': datetime.datetime(2022, 6, 4, 14, 26, 20, 15330), 'updated_at': datetime.datetime(2022, 6, 4, 14, 26, 20, 15394)}
+(hbnb) update BaseModel 43c18b6d-9816-4f50-9873-1d7501a68f57 name "John Doe"
+(hbnb) show BaseModel 43c18b6d-9816-4f50-9873-1d7501a68f57
+[BaseModel] (43c18b6d-9816-4f50-9873-1d7501a68f57) {'id': '43c18b6d-9816-4f50-9873-1d7501a68f57', 'created_at': datetime.datetime(2022, 6, 4, 14, 26, 20, 15330), 'updated_at': datetime.datetime(2022, 6, 4, 14, 26, 20, 15394), 'name': 'John Doe'}
+```
 
 This will start the command interpreter with the prompt `(hbnb)`. From here, you can enter any of the commands listed above, followed by the required arguments. For example:
 
