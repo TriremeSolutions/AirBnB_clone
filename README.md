@@ -72,6 +72,9 @@ Examples:
 ### usage based on the commands
 
 | Command | Syntax | Description |
+| --- | --- | --- |
+| create | `create <class name>` | Creates a new instance of the specified class and saves it to the JSON file. Prints the new instance's id. |
+
 
 ## contributors
 <a href="https://github.com/MelakuDemeke/AirBnB_clone/graphs/contributors">
