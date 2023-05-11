@@ -15,6 +15,7 @@ The command interpreter provides a way for the user to interact with the objects
 ### Commands
 - `create` - Creates a new instance of BaseModel, saves it (to the JSON file) and prints the id.
 - `show` - Prints the string representation of an instance based on the class name and id.
+- `destroy` - Deletes an instance based on the class name and id (save the change into the JSON file).
 
 
 
