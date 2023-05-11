@@ -42,6 +42,12 @@ To start the console, run the following command:
 ```
 Once the console has started, you can run any of the above commands followed by the necessary arguments.
 
+Examples:
+
+- Creating an instance of the BaseModel class:
+```
+(hbnb) create BaseModel
+```
 
 
 ## contributors
