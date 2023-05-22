@@ -5,13 +5,8 @@
     margin-bottom: 50px;
 }
 
-.places h1 {
-    font-size: 30px;
-    width: 100%;
-    margin-left: 20px;
-}
-
 .places article {
+    position: relative;
     width: 390px;
     padding: 20px;
     margin: 20px;
@@ -19,7 +14,12 @@
     border-radius: 4px;
     display: inline-block;
     text-align: center;
-    position: relative;
+}
+
+.places h1 {
+    font-size: 30px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .places article h2 {
